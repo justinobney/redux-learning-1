@@ -1,7 +1,7 @@
 import {BUTTON_CLICK} from 'constants';
 
 const initialUiState = {
-  title: 'CraftTrax React'
+  title: 'React Redux Leaning'
 };
 
 export function uiState(state = initialUiState, action) {
