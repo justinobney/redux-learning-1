@@ -31,9 +31,7 @@ module.exports = exports = {
   // build system
   // these will be bundled separately from the core app
   VENDOR_DEPENDENCIES : [
-    'immutable',
     'react',
-    'react-redux',
     'react-router',
     'redux'
   ],

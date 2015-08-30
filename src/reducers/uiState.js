@@ -1,7 +1,7 @@
 import {BUTTON_CLICK} from 'constants';
 
 const initialUiState = {
-  title: 'React Redux Leaning'
+  clicks: 0
 };
 
 export function uiState(state = initialUiState, action) {
@@ -9,7 +9,7 @@ export function uiState(state = initialUiState, action) {
 
     switch (type) {
         case BUTTON_CLICK:
-          let clicks = (state.clicks || 0) + 1;
+          let clicks = state.clicks + 1;
           return Object.assign({}, state, {clicks});
         default:
             return state;
